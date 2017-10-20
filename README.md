@@ -1,7 +1,7 @@
 # DengNi
 The first project of the emmmm group(2017/10/2)
 
-####项目说明：
+### 项目说明：
 * 一级文件目录中sever.js是服务器,public是所有的静态文件,其他不用管。
 * 前端写页面主要是在public中，其中每个页面会有一个.html文件和相应的css和js文件,template中是我们使用的模板文件，plugIn是有可能会用到的插件存放处。
 
