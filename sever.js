@@ -22,6 +22,8 @@ app.use(orm.express("sqlite:public/DengNi.db",{
         });
         models.Groups=db.define("GROUPS",{
             id:{type:'text'},
+            name:{type:'text'},
+            groupHolderId:{type:'text'},
             BBS:{type:'text'},
             tags:{type:'text'},
             description:{type:'text'}
