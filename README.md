@@ -4,6 +4,30 @@ The first project of the emmmm group(2017/10/2)
 ### 项目说明：
 * 一级文件目录中sever.js是服务器,public是所有的静态文件,其他不用管。
 * 前端写页面主要是在public中，其中每个页面会有一个.html文件和相应的css和js文件,template中是我们使用的模板文件，plugIn是有可能会用到的插件存放处。
+## 三.数据库建表设计
+```
+USERS//用户表
+{
+  id//代表用户邮箱
+  password//密码
+  sex//性别
+  phoneNumber//电话号码
+  qqNumber//qq号
+  BBS//聊天板
+  pairedId//匹配的id
+  groups//已经加入的群组的Id，内容用" "隔开每个id
+}
+GROUPS//群组表
+{
+  id//代表群组的名字+群主id
+  name//群组名
+  groupHolderId//群主Id
+  tags//群组标签，内容用" "隔开每个id
+  description//群组描述
+  BBS//群内聊天板
+}
+```
+
 
 ## 四.前台访问后台API规范
 
