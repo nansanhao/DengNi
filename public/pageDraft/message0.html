@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		list-style: none;
+	}
+	#wrapper{
+		height: 800px;
+		width: 1080px;
+		margin:0 auto;
+		position: relative;
+	}
+
+	#left{
+		position: absolute;
+		left: 0;
+	width: 55%;
+	height: 800px;
+	
+/* 	display: inline-block; */
+	background-color: #E3FC78;
+	}
+	#right{
+		position: absolute;
+		right: 0;
+	width: 40%;
+	height: 800px;
+/* 	display: inline-block; */
+	background-color: #DEF338;
+	margin-right: 0;
+	}
+	p{
+		display: inline-block;
+	}
+	#groupMsg div{
+		border: 1px bold ;		
+		background-color: #FFFFFF;
+		margin:10px 5px;
+		width: 500px;
+		height: 90px;
+	}
+</style>
+<body>
+	<div id="wrapper">
+
+		<div id="left">
+			<p style="margin-top: 100px;">聊天</p><br>
+			<textarea name="" id="" cols="60" rows="10">
+			</textarea>
+			<button>send</button>
+			<div style="margin-top: 100px;" id="groupMsg">
+				<div>17:25 @aaaaa:blablabla  </div>
+				<div>17:46 @bbbbb:blablabla  </div>
+				<div>20:45 @ccccc:blablabla  </div>
+			</div>
+		</div>
+		<div id="right">
+			<p style="margin-top: 150px;">我的消息</p>
+			<ul style="margin-top: 100px">
+				<li>@用户aaa</li>
+				<li>@用户bbb</li>
+				<li>@用户ccc</li>
+				<li>@用户ddd</li>
+			</ul>
+		</div>
+	</div>
+		
+</body>
+</html>
