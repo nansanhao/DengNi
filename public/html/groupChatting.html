@@ -1,10 +1,247 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chatting</title>
+    <link rel="stylesheet" href="../css/all_match.css">
+    <link rel="stylesheet" href="../css/chat.css">
+    <link rel="stylesheet" href="../css/add.css">
+    <script src="../js/all_match.js"></script>
+    <script src="../js/add.js"></script>
+
+
+    <link rel="stylesheet" href="../template/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../template/bootstrap-3.3.7-dist/css/style.css">
+    <link rel="stylesheet" href="../template/fonts/Font-Awesome-3.2.1/css/font-awesome.css">
+
+    <script src="../template/jquery-3.2.1/jquery-3.2.1.js"></script>
+
+    <script src="../template/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#backIcon").hover(function () {
+                $("#backIcon").attr("src","../img/back.png")
+            },function () {
+                $("#backIcon").attr("src","../img/back_.png")
+            });
+            $("#allIcon").hover(function () {
+                $("#allIcon").attr("src", "../img/all.png")
+            },function () {
+                if($("#allIcon").attr("class")!="active")
+                    $("#allIcon").attr("src", "../img/all_.png")
+            });
+            $("#addIcon").hover(function () {
+                $("#addIcon").attr("src","../img/add.png")
+            },function () {
+                if($("#addIcon").attr("class")!="active")
+                    $("#addIcon").attr("src", "../img/add_.png")
+            });
+            $("#matchIcon").hover(function () {
+                $("#matchIcon").attr("src","../img/match.png")
+            },function () {
+                if($("#matchIcon").attr("class")!="active")
+                $("#matchIcon").attr("src","../img/match_.png")
+            });
+            $("#chatIcon").hover(function () {
+                $("#chatIcon").attr("src","../img/chat.png")
+            },function () {
+                if($("#chatIcon").attr("class")!="active")
+                $("#chatIcon").attr("src","../img/chat_.png")
+            });
+        })
+
+    </script>
 </head>
 <body>
+  <div id="menuBar">
+      <ul class="nav nav-list" >
+          <li><a href="#" ><img id="backIcon" src="../img/back_.png"></a></li>
+          <li><a href="#"><img id="allIcon" class="active" src="../img/all.png"></a></li>
+          <li><a href="#"><img id="addIcon"  src="../img/add_.png"></a></li>
+          <li><a href="#"><img id="matchIcon" src="../img/match_.png"></a></li>
+          <li><a href="#"><img id="chatIcon" src="../img/chat_.png"></a></li>
+      </ul>
+  </div>
+  <div id="content">
+      <div id="all" style="display: none">
+          <!--<script type="text/css">-->
+             <!--body{-->
+                 <!--background: url("../img/chatting2.png");-->
+             <!--}-->
+          <!--</script>-->
+          <!--占据左边黑色——群组-->
+          <div id="groups">
+              <!--黑色上半部——所有群组-->
+             <div class="groupKind" style="height: 40%">
+                 <div class="search" >
+                     <form>
+                         <input type="text" placeholder="搜索从这里开始..."/>
+                         <button type="button"></button>
+                     </form>
+                 </div>
+                 <h3 style="color: #FFFFFF;border-bottom: solid 2px rgba(245,238,240,0.95);">AllGroups</h3>
 
+                    <ul class="groups-list" >
+                        <li >
+                            <a href="#"><figure style="background-image:url(../img/pic01.jpg)"><h4>王者荣耀</h4></figure></a>
+                        </li>
+                        <li >
+                            <a href="#"><figure style="background-image:url(../img/pic02.jpg)"><h4>王者荣耀</h4></figure></a>
+                        </li>
+                        <li >
+                            <a href="#"><figure style="background-image:url(../img/pic03.jpg)"><h4>王者荣耀</h4></figure></a>
+                        </li>
+                        <li >
+                            <a href="#"><figure style="background-image:url(../img/pic04.jpg)"><h4>王者荣耀</h4></figure></a>
+                        </li>
+                    </ul>
+             </div>
+              <!--黑色下半部——我的群组-->
+              <div class="groupKind" style="height: 60%">
+                  <h3 style="color: #FFFFFF;border-bottom: solid 2px rgba(245,238,240,0.95);"> MyGroups</h3>
+                  <ul class="groups-list" >
+                    <li >
+                        <a href="#"><figure style="background-image:url(../img/pic01.jpg)"><h4>王者荣耀</h4></figure></a>
+                    </li>
+                    <li >
+                        <a href="#"><figure style="background-image:url(../img/pic02.jpg)"><h4>王者荣耀</h4></figure></a>
+                    </li>
+                    <li >
+                        <a href="#"><figure style="background-image:url(../img/pic03.jpg)"><h4>王者荣耀</h4></figure></a>
+                    </li>
+                    <li >
+                        <a href="#"><figure style="background-image:url(../img/pic04.jpg)"><h4>王者荣耀</h4></figure></a>
+                    </li>
+                    <li >
+                        <a href="#"><figure style="background-image:url(../img/pic05.jpg)"><h4>王者荣耀</h4></figure></a>
+                    </li>
+                      <li >
+                          <a href="#"><figure style="background-image:url(../img/add_.png)"></figure></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <!--占据右边白色——广场（消息）-->
+          <div id="square">
+              <h3 style="color: #000000;border-bottom: solid 2px rgba(45,45,44,0.79);">Square</h3>
+              <ul class="message">
+                  <li >
+                      <a href="#">
+                          <figure style="background-image: url(../img/pic01.jpg)"></figure>
+                          <header>
+                              <h4>我们爱学习呜呜呜</h4>
+                              <span>October 30,2017</span>
+                          </header>
+
+                              <span class="circle"><b>500</b></span>
+
+                      </a>
+                  </li>
+                  <li >
+                      <a href="#">
+                          <figure style="background-image: url(../img/pic01.jpg)"></figure>
+                          <header>
+                              <h4>我们爱学习呜呜呜</h4>
+                              <span>October 30,2017</span>
+                          </header>
+
+                          <span class="circle"><b>500</b></span>
+
+                      </a>
+                  </li>
+                  <li >
+                      <a href="#">
+                          <figure style="background-image: url(../img/pic01.jpg)"></figure>
+                          <header>
+                              <h4>我们爱学习呜呜呜</h4>
+                              <span>October 30,2017</span>
+                          </header>
+                          <span class="circle"><b>500</b></span>
+
+                      </a>
+                  </li>
+              </ul>         
+            </div>
+      </div>
+      <div id="add" style="display: none">
+          <!--<script type="text/css">-->
+          <!--body{-->
+          <!--background: url("../img/people2.png");-->
+          <!--}-->
+          <!--</script>-->
+      </div>
+      <div id="match" style="display:none">
+          <!--<script type="text/css">-->
+          <!--body{-->
+          <!--background: url("../img/children2.png");-->
+          <!--}-->
+          <!--</script>-->
+          <!--match显现时的display为flex-->
+
+          <button  type="button" class="matchButton" onclick="loading()" style="display: block">
+              Click me to match~</button>
+          <div class="spinner" style="display: none">
+                  <div class="rect1"></div>
+                  <div class="rect2"></div>
+                  <div class="rect3"></div>
+                  <div class="rect4"></div>
+                  <div class="rect5"></div>
+          </div>
+          <div class="matchResult" style="display: none">
+              <button  type="button" class="matchAgainButton" onclick="loadingAgain()" style="display:block">
+                  Match again~</button>
+              <div class="others" style="display: block"><h4><b>王者荣耀</b></h4>
+              </div>
+              <button  type="button" class="matchAgainButton" onclick="confirmJoin()" style="display:block">
+                  加入群组</button>
+
+          </div>
+
+      </div>
+      <div id="chat" style="display: block">
+          <!--<script type="text/css">-->
+          <!--body{-->
+          <!--background: url("../img/girls2.png");-->
+          <!--}-->
+          <!--</script>-->
+          <!-- 下面实现留言板功能 -->
+          <div class="mainframe">
+              <div class="title">Chatting Room</div>
+              <div class="info">
+                  Let's have fun !
+              </div>
+              <div class="content" contenteditable="true"></div>
+              <input type="button" name="submit" value="发表" class="subbtn">
+              <div class="numofmessage">留言(0)</div>
+              <!-- 下面是留言区 -->
+              <div class="msgFrame">
+
+              </div>
+          </div>
+          <!--下面是右侧组群介绍-->
+          <div class="groupInfo">
+              <div class="imgAndName">
+                  <div class="groupImg">
+                  </div>
+                  <div class="groupName">我们超级爱学习的啊啊啊啊啊啊啊
+                  </div>
+              </div>
+              <div class="description">
+                  <div class="describeTitle">群组介绍
+                  </div>
+                  <div class="describeContent">
+                      &nbsp;&nbsp;&nbsp;&nbsp;垃圾垃圾垃圾垃圾垃圾吉拉垃圾垃圾留及垃圾留及及
+                      垃圾垃圾垃圾垃圾垃圾吉拉垃圾垃圾留及垃圾留及及留
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+      <script type="text/javascript" src="../template/jquery-3.2.1/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="../js/chat.js"></script>
+  </div>
 </body>
 </html>

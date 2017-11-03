@@ -1,0 +1,195 @@
+/*#chat{*/
+    /*font-size: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: transparent;*/
+    /*box-sizing: border-box;*/
+
+/*}*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#chat{
+    background-color: transparent;
+    font-family: punctuation,"PingFangSC-Regular","Microsoft Yahei","sans-serif";
+    height: 100%;
+    font-size: 0;
+    box-sizing: border-box;
+
+}
+
+.mainframe{
+    float: left;
+    width:70%;
+    height:100%;
+    background-color:#dedadca1;
+    color:#EDEFF0;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
+.title{
+    color: #ed5788;
+    padding-top: 2%;
+    padding-left: 2%;
+    margin: 0;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+}
+.title:hover{
+    color:#70CCFF;
+}
+
+.info{
+    color: #ed5788;
+    padding:2% 6%;
+    margin: 0 auto;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+.content{
+    width: 88%;
+    height: 25%;
+    word-break: break-all;
+    align-self: center;
+    padding-left:0;
+    margin-left: 6%;
+    border: 2px solid silver;
+    background-color: #e2e2e2;
+    color: black;
+    text-indent: 2px;
+    font-size: 20px;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+.subbtn{
+    width: 7%;
+    height: 4%;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #46B2EF;
+    color: #FFFFFF;
+    border: 1px solid #9fa8ad;
+    cursor:pointer;
+    margin-left: 87%;
+    margin-top: 0.5%;
+}
+.subbtn:hover{
+    background-color: #1a88cf;
+}
+.numofmessage{
+    width: 88%;
+    height: 5%;
+    color: #ed5788;
+    margin: 0 6%;
+    line-height: 20px;
+    border-bottom: 2px solid #1f88c3db;
+    font-size: 17px;
+    font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.msgFrame{
+    width: 88%;
+    height: 100%;
+    margin: 0 6%;
+}
+.content_1{
+    width: 100%;
+    height: 15%;
+    color: #EDEFF0;
+    margin: 0;
+    border-bottom: 2px dashed #1f88c3db;
+}
+.name{
+    width: 5%;
+    height: 0;
+    padding-bottom: 5%;
+    background: url("../img/pic02.jpg");
+    /*和img的src都要有,且图片取决靠背景*/
+    margin:0.5% 2% 1% 1%;
+    border-radius: 5px;
+}
+a{
+    color: #70CCFF;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.mainInfo{
+    width: 92%;
+    height: 100%;
+    float: right;
+    padding-top: 0.5%;
+}
+.userId{
+    width: 100%;
+    height: 15%;
+    font-size: 15px;
+    color: #ed5788;
+}
+.conInfo{
+    width: 100%;
+    height: 65%;
+    font-size: 20px;
+    padding: 2% 2%;
+    color: #404142;
+}
+.time{
+    width: 100%;
+    height: 15%;
+    font-size: 12px;
+    padding-bottom: 4%;
+    color: #38393ae6;
+}
+
+.groupInfo{
+    float: right;
+    width: 30% ;
+    height: 100%;
+    background-color: #378fc4;
+    padding:4% 3%;
+    
+}
+.imgAndName{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20%;
+    border-bottom: 2px solid #9d9d9d;
+}
+.groupImg{
+    float: left;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    margin-right: 3%;
+    background: url("../img/pic03.jpg");
+    background-size: cover;
+}
+
+.groupName{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+.description{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+}
+.describeTitle{
+    padding-top: 3%;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    color: #9d9d9d;
+    font-size: 15px;
+    height: 7%;
+}
+.describeContent{
+    padding: 3% 5%;
+    background-color: transparent;
+    height: 93%;
+    color: #9d9d9d;
+    font-family: "Arial", "Microsoft YaHei",  "宋体", sans-serif;
+    font-size: 20px;
+}

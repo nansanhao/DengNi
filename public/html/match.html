@@ -3,8 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            background: url(../img/pic01.jpg) no-repeat left top /*这里本兽加了个图片背景，用以区分背景的半透明及内容的完全不透明*/
+        }
+        .test-div{
+            position: relative;  /*日常相对定位(重要，下面内容也会介绍)*/
+            width:300px;
+            height: 120px;
+            padding: 20px 10px;
+            font-weight: bold;
+        }
+        .test-div:before{
+            position: absolute;  /*日常绝对定位(重要，下面内容也会略带介绍)*/
+            content: "";  /*:before和:after必带技能，重要性为满5颗星*/
+            top:0;
+            left: 0;
+            width: 100%;  /*和内容一样的宽度*/
+            height: 100%;  /*和内容一样的高度*/
+            background: rgba(255,255,255,.5); /*给定背景白色，透明度50%*/
+            z-index:-1 /*日常元素堆叠顺序(重要，下面内容也会略带介绍)*/
+        }
+    </style>
 </head>
 <body>
 
+<!--这里容兽偷个懒，布局简单写写-->
+<div class="test-div">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input placeholder="your name" /></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input placeholder="your password" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="login" /></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
