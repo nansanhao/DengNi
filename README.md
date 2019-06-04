@@ -1,4 +1,6 @@
 # DengNi
+一个准备参加比赛的小项目，大概内容是做一个守护天使游戏的网页版，后来鸽了。（2019/6/4）
+
 The first project of the emmmm group(2017/10/2)
 
 ### 项目说明：
